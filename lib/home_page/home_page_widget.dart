@@ -28,7 +28,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 CButton(
-                  width: MediaQuery.of(context).size.width,
+                  width: 250,
                   height: 100,
                 ),
               ],
