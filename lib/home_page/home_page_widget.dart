@@ -20,9 +20,20 @@ class _HomePageWidgetState extends State<HomePageWidget> {
       key: scaffoldKey,
       backgroundColor: Color(0xFFF5F5F5),
       body: SafeArea(
-        child: CButton(
-          width: double.infinity,
-          height: double.infinity,
+        child: Column(
+          mainAxisSize: MainAxisSize.max,
+          children: [
+            Row(
+              mainAxisSize: MainAxisSize.max,
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                CButton(
+                  width: MediaQuery.of(context).size.width,
+                  height: 100,
+                ),
+              ],
+            ),
+          ],
         ),
       ),
     );
